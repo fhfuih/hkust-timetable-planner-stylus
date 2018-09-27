@@ -34,7 +34,6 @@ export const styles = () => gulp
 
 export const scripts = () => gulp
     .src(paths.scripts, { sourcemaps: true })
-    // .pipe(babel())
     .pipe(uglifyJS())
     .pipe(gulp.dest(paths.dest))
 

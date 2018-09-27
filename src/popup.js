@@ -111,7 +111,7 @@ function updateCourseDots() {
 }
 function updateOptionCircle() {
     $(".option-color-circle").removeClass("active");
-    $('.option-color-circle[data-color="${selectedColor}"]').addClass("active");
+    $('.option-color-circle[data-color="' + selectedColor + '"]').addClass("active");
 }
 
 function makeOptions() {
