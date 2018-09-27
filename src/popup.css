@@ -1,0 +1,82 @@
+body {
+    width: 300px;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+#github-button {
+    position: absolute;
+    left: 15px;
+    top: 6px;
+}
+.icon-github {
+    font-size: large;
+}
+#refresh-button {
+    position: absolute;
+    right: 15px;
+    top: 6px;
+}
+.icon-spinner11 {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.simplebar-track {
+    z-index: 3 !important;
+    opacity: 0.4;
+}
+
+#course-collapse {
+    max-height: 160px;
+}
+
+#course-container {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.course-color-dot {
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.course-item.list-group-item {
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.course-item.list-group-item > * {
+    pointer-events: none;
+}
+
+.course-item.list-group-item.active {
+    background-color: rgb(233, 233, 233);
+    color: #495057;
+}
+
+.option-color-circle {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    color: darkgray;
+    background-color: lightgray;
+    border: 1.5px solid gray;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.option-color-circle.active:after {
+    font-family: "icomoon";
+    content: "\ea10";
+    line-height: 50px; /* same as circle diameter */
+    font-size: 24px;
+}
+

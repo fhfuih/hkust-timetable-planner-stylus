@@ -1,0 +1,1 @@
+var port=chrome.runtime.connect({name:"CONTENT"});port.onMessage.addListener(function(e){window.postMessage(e,"*")}),console.log("[USTS] The channel between the site and the extension is established!");

@@ -1,0 +1,29 @@
+{
+  "name": "ust-space-timetable-stylus",
+  "version": "1.0.0",
+  "description": "Customize your ust.space Timetable Colors!",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "ust.space",
+    "customization",
+    "colors"
+  ],
+  "author": "fhfuih",
+  "license": "GPL-3.0"
+}
