@@ -16,5 +16,5 @@ I plan to add a build process to this project to
 This project is published under GPL-v3.0.
 
 This is merely a 3rd-party plugin (Chrome browser extension) to the [HKUST Timetable Planner](https://admlu65.ust.hk/) web app.
-This project is affiliated to, or have any relationship with [HKUST](https://hkust.edu.hk/)
+This project is *not* affiliated to, nor have any relationship with [HKUST](https://hkust.edu.hk/)
 or the [HKUST Timetable Planner](https://admlu65.ust.hk/) web app.
