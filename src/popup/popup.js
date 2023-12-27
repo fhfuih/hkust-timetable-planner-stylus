@@ -143,7 +143,8 @@ function updateColorCircles() {
     document.querySelectorAll(".option-color-circle").forEach(function (e) {
         e.classList.remove("active");
     })
-    document.querySelector(`.option-color-circle[data-color="${selectedColor}"]`).classList.add("active");
+    const matchingColorCircle = document.querySelector(`.option-color-circle[data-color="${selectedColor}"]`)
+    if (matchingColorCircle) matchingColorCircle.classList.add("active");
 }
 
 function updateColorPicker() {

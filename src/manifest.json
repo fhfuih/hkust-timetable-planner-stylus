@@ -3,18 +3,8 @@
     "name": "HKUST Timetable Planner Stylus",
     "description": "Customize your Timetable Ext Planner!",
     "version": "2.0",
-    "permissions": [
-        "declarativeContent",
-        "activeTab"
-    ],
+    "permissions": [],
     "content_scripts": [
-        {
-            "matches": ["https://admlu65.ust.hk/"],
-            "js": [
-                "contentScript.js"
-            ],
-            "world": "ISOLATED"
-        },
         {
             "matches": ["https://admlu65.ust.hk/"],
             "js": [
