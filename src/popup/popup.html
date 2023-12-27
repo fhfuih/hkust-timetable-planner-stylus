@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="vendor/bootstrap.css">
+    <link rel="stylesheet" href="vendor/simplebar.min.css">
+    <link rel="stylesheet" href="vendor/icomoon/style.css">
+    <link rel="stylesheet" href="popup.css">
+    <script defer src="vendor/simplebar.min.js"></script>
+    <script defer src="popup.js"></script>
+</head>
+<body>
+    <header class="border-bottom align-text-middle text-center position-relative py-2 mb-3">
+        <h1 class="h6 my-0">HKUST Timetable Planner Stylus</h1>
+        <a class="icon-link" id="github-button" title="View source code on GitHub" href="https://github.com/fhfuih/ust-space-timetable-stylus" target="_blank">
+            <span class="icon-github"></span>
+        </a>
+    </header>
+    <main class="mx-4">
+        <article>
+            <header class="d-flex">
+                <h2 class="flex-fill h6">Select course</h2>
+                <button type="button" class="btn btn-link p-0" id="refresh-button" title="Manually refresh course list">
+                    <span class="icon-spinner11"></span>
+                    Refresh course list
+                </button>
+            </header>
+            <div class="my-3 mx-4" id="course-collapse" data-simplebar>
+                <!-- #course-item-template instances are inserted in the #course-container-->
+                <div class="list-group" id="course-container"></div>
+                <template id="course-item-template">
+                    <button class="px-3 py-2 list-group-item list-group-item-action course-item">
+                        <span class="align-text-middle course-color-dot"></span>
+                        <span class="course-label">SWAG 0000</span>
+                    </button>
+                </template>
+            </div>
+        </article>
+        <div class="d-flex justify-content-around flex-wrap mx-4 px-2 my-3" id="option-container">
+            <!-- <span class="option-color-circle"></span> -->
+        </div>
+        <template id="option-item-template">
+            <span class="option-color-circle text-center"></span>
+        </template>
+        <div class="text-center mx-4 my-3">
+            <button class="btn btn-success" id="save-button">Save</button>
+            <button class="btn btn-warning" id="reset-button">Reset</button>
+            <button class="btn btn-secondary" id="close-button">Close</button>
+        </div>
+    </main>
+</body>
+</html>
