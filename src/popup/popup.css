@@ -32,7 +32,7 @@ body {
 }
 
 #course-collapse {
-    max-height: 160px;
+    max-height: 168px;
 }
 
 #course-container {
@@ -71,22 +71,67 @@ body {
     color: #495057;
 }
 
+#select-color h2 small {
+    color: gray;
+    font-style: italic;
+    font-size: 0.875em;
+    font-weight: normal;
+}
+
 .option-color-circle {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     color: darkgray;
     background-color: lightgray;
     border: 1.5px solid gray;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
-.option-color-circle.active:after {
+.option-color-circle.active::after {
     font-family: "icomoon";
     content: "\ea10";
-    line-height: 50px; /* same as circle diameter */
-    font-size: 24px;
+    font-size: 20px;
 }
 
+.timetable-example {
+    display: inline-block;
+    width: 146px;
+    height: 67.5px;
+    padding: 8px;
+    line-height: 18px;
+    margin: -1px;
+    border: 1px solid transparent;
+    opacity: .9;
+    overflow: hidden;
+    pointer-events: none;
+    border-color: rgb(152, 152, 152);
+    background: rgb(202, 202, 202);
+    color: rgb(72, 72, 72);
+}
+.timetable-example > .title {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.timetable-example > .title > span {
+    float: right;
+    text-align: right;
+}
+
+.timetable-example > .time {
+    opacity: .7;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.color-picker-app {
+    display: inline-block;
+    box-shadow: none;
+    width: 12em!important;
+    /* margin-top: .5rem!important; */
+}

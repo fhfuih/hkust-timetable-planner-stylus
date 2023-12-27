@@ -4,7 +4,9 @@
     <link rel="stylesheet" href="vendor/bootstrap.css">
     <link rel="stylesheet" href="vendor/simplebar.min.css">
     <link rel="stylesheet" href="vendor/icomoon/style.css">
+    <link rel="stylesheet" href="vendor/pickr.nano.min.css">
     <link rel="stylesheet" href="popup.css">
+    <script src="vendor/pickr.min.js"></script> <!-- "The script tag doesn't work with the defer attribute." -->
     <script defer src="vendor/simplebar.min.js"></script>
     <script defer src="popup.js"></script>
 </head>
@@ -16,15 +18,15 @@
         </a>
     </header>
     <main class="mx-4">
-        <article>
-            <header class="d-flex">
+        <article class="my-3">
+            <header class="d-flex mb-2">
                 <h2 class="flex-fill h6">Select course</h2>
                 <button type="button" class="btn btn-link p-0" id="refresh-button" title="Manually refresh course list">
                     <span class="icon-spinner11"></span>
                     Refresh course list
                 </button>
             </header>
-            <div class="my-3 mx-4" id="course-collapse" data-simplebar>
+            <div class="mx-4" id="course-collapse" data-simplebar>
                 <!-- #course-item-template instances are inserted in the #course-container-->
                 <div class="list-group" id="course-container"></div>
                 <template id="course-item-template">
@@ -35,17 +37,34 @@
                 </template>
             </div>
         </article>
-        <div class="d-flex justify-content-around flex-wrap mx-4 px-2 my-3" id="option-container">
-            <!-- <span class="option-color-circle"></span> -->
-        </div>
-        <template id="option-item-template">
-            <span class="option-color-circle text-center"></span>
-        </template>
-        <div class="text-center mx-4 my-3">
-            <button class="btn btn-success" id="save-button">Save</button>
-            <button class="btn btn-warning" id="reset-button">Reset</button>
-            <button class="btn btn-secondary" id="close-button">Close</button>
-        </div>
+        <article id="select-color" class="my-3">
+            <h2 class="h6 mb-2">
+                Select text color
+                <br>
+                <small>The card background color will be calculated automatically</small>
+            </h2>
+            <!-- #option-item-template instances are inserted in the #option-container-->
+            <div class="row g-3 px-2 d-none" id="option-container"></div>
+            <template id="option-item-template">
+                <div class="col-2">
+                    <div class="option-color-circle text-center"></div>
+                </div>
+            </template>
+            <div class="d-flex justify-content-between mt-2">
+                <div class="color-picker"></div>
+                <div class="d-flex flex-column">
+                    <div class="timetable-example mt-3">
+                        <p class="title">DEMO 1000<span>L1</span></p>
+                        <p class="time">4:00 PM - 5:50 PM</p>
+                        <p class="time">Rm 2502, Lift 25-26 (120)</p>
+                    </div>
+                    <div class="flex-fill"></div>
+                    <button class="mb-2 btn btn-success" id="save-button">Save</button>
+                    <button class="mb-2 btn btn-warning" id="reset-button">Reset</button>
+                    <button class="mb-4 btn btn-secondary" id="close-button">Close</button>
+                </div>
+            </div>
+        </article>
     </main>
 </body>
 </html>
